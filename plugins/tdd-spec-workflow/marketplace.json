@@ -1,0 +1,305 @@
+{
+  "$schema": "https://claude.ai/schemas/plugin-marketplace-v1.json",
+  
+  "name": "tdd-spec-workflow",
+  "displayName": "TDD Spec Workflow",
+  "version": "2.0.0",
+  "description": "Test-Driven Development with spec-workflow-mcp and Ralph Wiggum autonomous loops. Enforces TDD methodology across any language with real-time dashboard and overnight batch execution.",
+  "shortDescription": "TDD + Spec-Driven Development + Ralph Wiggum autonomous loops",
+  
+  "author": {
+    "name": "Your Team",
+    "email": "team@example.com",
+    "url": "https://github.com/your-org"
+  },
+  
+  "publisher": "your-org",
+  "license": "MIT",
+  "homepage": "https://github.com/your-org/tdd-spec-workflow",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/tdd-spec-workflow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/tdd-spec-workflow/issues"
+  },
+  "documentation": "https://github.com/your-org/tdd-spec-workflow#readme",
+  
+  "categories": [
+    "Testing",
+    "Development Workflow",
+    "Automation",
+    "Code Quality"
+  ],
+  
+  "keywords": [
+    "tdd",
+    "test-driven-development",
+    "testing",
+    "spec-driven",
+    "workflow",
+    "ralph-wiggum",
+    "autonomous",
+    "pytest",
+    "vitest",
+    "jest",
+    "xunit",
+    "xctest",
+    "coverage",
+    "e2e",
+    "integration-testing",
+    "unit-testing",
+    "claude-for-chrome",
+    "dashboard",
+    "batch-execution"
+  ],
+  
+  "icon": "https://github.com/your-org/tdd-spec-workflow/raw/main/assets/icon.png",
+  "banner": "https://github.com/your-org/tdd-spec-workflow/raw/main/assets/banner.png",
+  
+  "screenshots": [
+    {
+      "url": "https://github.com/your-org/tdd-spec-workflow/raw/main/assets/screenshots/dashboard.png",
+      "caption": "Real-time spec-workflow dashboard showing task progress"
+    },
+    {
+      "url": "https://github.com/your-org/tdd-spec-workflow/raw/main/assets/screenshots/ralph-loop.png",
+      "caption": "Ralph Wiggum autonomous TDD loop in action"
+    },
+    {
+      "url": "https://github.com/your-org/tdd-spec-workflow/raw/main/assets/screenshots/init-wizard.png",
+      "caption": "Interactive init wizard with testing tool recommendations"
+    }
+  ],
+  
+  "pricing": {
+    "type": "free"
+  },
+  
+  "engines": {
+    "claude-code": ">=1.0.0"
+  },
+  
+  "requirements": {
+    "runtime": [
+      {
+        "name": "node",
+        "version": ">=18.0.0",
+        "purpose": "Required for spec-workflow-mcp server"
+      }
+    ],
+    "plugins": [
+      {
+        "name": "ralph-wiggum",
+        "optional": true,
+        "purpose": "Required for autonomous task execution (/tdd:execute-task, /tdd:batch-execute)"
+      }
+    ]
+  },
+  
+  "languages": [
+    {
+      "name": "Python",
+      "testing": ["pytest", "unittest"],
+      "support": "full"
+    },
+    {
+      "name": "JavaScript",
+      "testing": ["Vitest", "Jest"],
+      "support": "full"
+    },
+    {
+      "name": "TypeScript",
+      "testing": ["Vitest", "Jest"],
+      "support": "full"
+    },
+    {
+      "name": "Go",
+      "testing": ["go test", "testify"],
+      "support": "full"
+    },
+    {
+      "name": "Rust",
+      "testing": ["cargo test"],
+      "support": "full"
+    },
+    {
+      "name": "Java",
+      "testing": ["JUnit 5", "TestNG"],
+      "support": "full"
+    },
+    {
+      "name": "Kotlin",
+      "testing": ["JUnit 5", "Kotest"],
+      "support": "full"
+    },
+    {
+      "name": "Swift",
+      "testing": ["XCTest", "Quick/Nimble"],
+      "support": "full"
+    },
+    {
+      "name": "C#",
+      "testing": ["xUnit", "NUnit", "MSTest"],
+      "support": "full"
+    },
+    {
+      "name": "Xojo",
+      "testing": ["XojoUnit"],
+      "support": "full"
+    },
+    {
+      "name": "Other",
+      "testing": ["Custom"],
+      "support": "interactive-setup"
+    }
+  ],
+  
+  "features": [
+    {
+      "name": "Multi-Language TDD",
+      "description": "Built-in support for 10+ languages with custom language support"
+    },
+    {
+      "name": "Ralph Wiggum Integration",
+      "description": "Autonomous task execution loops that iterate until tests pass"
+    },
+    {
+      "name": "Spec-Driven Workflow",
+      "description": "Create specs, generate tasks, track progress with real-time dashboard"
+    },
+    {
+      "name": "Three Init Modes",
+      "description": "Full init, steering docs only, or add TDD entries to existing projects"
+    },
+    {
+      "name": "Interactive Setup",
+      "description": "Asks about your tech stack and recommends testing tools"
+    },
+    {
+      "name": "Overnight Batch Execution",
+      "description": "Execute multiple tasks while you sleep"
+    },
+    {
+      "name": "Claude for Chrome E2E",
+      "description": "Browser automation for end-to-end testing"
+    },
+    {
+      "name": "Path-Scoped Rules",
+      "description": "Context-aware TDD guidance based on file type"
+    }
+  ],
+  
+  "commands": [
+    {
+      "name": "/tdd:init",
+      "description": "Initialize TDD workflow (auto-detect mode or specify --mode full|steering|entries)"
+    },
+    {
+      "name": "/tdd:execute-task",
+      "description": "Execute task with Ralph loop (autonomous TDD)"
+    },
+    {
+      "name": "/tdd:execute-task-manual",
+      "description": "Execute task interactively (no Ralph required)"
+    },
+    {
+      "name": "/tdd:batch-execute",
+      "description": "Execute multiple tasks overnight"
+    },
+    {
+      "name": "/tdd:dashboard",
+      "description": "Open spec-workflow dashboard"
+    },
+    {
+      "name": "/tdd:status",
+      "description": "Check TDD compliance and coverage"
+    },
+    {
+      "name": "/tdd:run-tests",
+      "description": "Run tests with coverage"
+    },
+    {
+      "name": "/tdd:verify-setup",
+      "description": "Verify all dependencies are installed"
+    }
+  ],
+  
+  "mcp": {
+    "servers": [
+      {
+        "name": "spec-workflow",
+        "package": "@pimzino/spec-workflow-mcp",
+        "description": "Spec-driven development workflow with dashboard"
+      }
+    ]
+  },
+  
+  "installSteps": [
+    {
+      "step": 1,
+      "action": "Install this plugin",
+      "command": "claude plugin add tdd-spec-workflow"
+    },
+    {
+      "step": 2,
+      "action": "Install Ralph Wiggum (optional, for autonomous mode)",
+      "command": "/plugin install ralph-wiggum@claude-plugins-official"
+    },
+    {
+      "step": 3,
+      "action": "Initialize your project",
+      "command": "/tdd:init"
+    }
+  ],
+  
+  "changelog": {
+    "2.0.0": {
+      "date": "2026-01-05",
+      "changes": [
+        "Added Ralph Wiggum integration for autonomous task execution",
+        "Added multi-language support (Python, JS/TS, Go, Rust, Java, Kotlin, Swift, C#, Xojo)",
+        "Added custom language support for any testing framework",
+        "Added three init modes (full, steering, entries)",
+        "Added interactive testing tool recommendations",
+        "Added architecture-specific recommendations (microservices, serverless, mobile, desktop, games)",
+        "Added /tdd:execute-task-manual for interactive mode without Ralph",
+        "Added /tdd:batch-execute for overnight execution",
+        "Made Ralph Wiggum optional (only needed for autonomous mode)"
+      ]
+    },
+    "1.0.0": {
+      "date": "2026-01-04",
+      "changes": [
+        "Initial release",
+        "Python + pytest support",
+        "Basic TDD enforcement with hooks",
+        "Spec-workflow-mcp integration",
+        "Claude for Chrome E2E support"
+      ]
+    }
+  },
+  
+  "support": {
+    "email": "support@example.com",
+    "discord": "https://discord.gg/your-server",
+    "discussions": "https://github.com/your-org/tdd-spec-workflow/discussions"
+  },
+  
+  "badges": [
+    {
+      "type": "verified",
+      "label": "Verified Publisher"
+    },
+    {
+      "type": "featured",
+      "label": "Staff Pick"
+    }
+  ],
+  
+  "stats": {
+    "installs": 0,
+    "rating": 0,
+    "reviews": 0
+  }
+}

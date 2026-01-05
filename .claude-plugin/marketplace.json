@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "metadata": {
+    "name": "TDD Spec Workflow Marketplace",
+    "description": "Test-Driven Development plugins for Claude Code with spec-workflow-mcp and Ralph Wiggum autonomous loops",
+    "author": "Your Team",
+    "homepage": "https://github.com/your-org/tdd-marketplace"
+  },
+  "plugins": [
+    {
+      "name": "tdd-spec-workflow",
+      "description": "TDD with spec-workflow-mcp and Ralph Wiggum. Multi-language support (Python, JS/TS, Go, Rust, Java, Swift, C#, Xojo). Autonomous task execution with real-time dashboard.",
+      "version": "2.0.0",
+      "keywords": ["tdd", "testing", "spec-driven", "ralph-wiggum", "autonomous"],
+      "source": {
+        "type": "github",
+        "repo": "alexioklini/tdd-marketplace",
+        "path": "plugins/tdd-spec-workflow"
+      }
+    }
+  ]
+}

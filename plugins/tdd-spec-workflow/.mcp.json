@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "spec-workflow": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@pimzino/spec-workflow-mcp@latest",
+        "${CLAUDE_PROJECT_DIR}"
+      ],
+      "env": {
+        "SPEC_WORKFLOW_DASHBOARD": "true",
+        "SPEC_WORKFLOW_PORT": "5000"
+      }
+    }
+  }
+}

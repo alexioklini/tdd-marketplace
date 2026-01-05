@@ -1,0 +1,47 @@
+{
+  "name": "tdd-spec-workflow",
+  "version": "2.0.0",
+  "description": "Test-Driven Development with spec-workflow-mcp and Ralph Wiggum loops. Multi-language support (Python, JS/TS, Go, Rust, Java, Swift, C#, Xojo, and custom). Autonomous task execution with real-time dashboard.",
+  "author": "Your Team",
+  "homepage": "https://github.com/your-org/tdd-spec-workflow",
+  "repository": "https://github.com/your-org/tdd-spec-workflow",
+  "keywords": ["tdd", "testing", "spec-driven", "workflow", "ralph", "autonomous", "multi-language"],
+  "license": "MIT",
+  
+  "marketplace": "./marketplace.json",
+  
+  "claude": {
+    "minVersion": "1.0.0"
+  },
+  
+  "requires": {
+    "runtime": ["node >= 18.0.0"],
+    "note": "Node.js required for spec-workflow-mcp server"
+  },
+  
+  "optional": {
+    "plugins": ["ralph-wiggum"],
+    "note": "Ralph Wiggum needed for autonomous mode (/tdd:execute-task). Not needed for manual mode (/tdd:execute-task-manual)."
+  },
+  
+  "components": {
+    "commands": "./commands",
+    "skills": "./skills", 
+    "rules": "./rules",
+    "hooks": "./hooks"
+  },
+  
+  "mcp": {
+    "config": "./.mcp.json",
+    "servers": {
+      "spec-workflow": {
+        "package": "@pimzino/spec-workflow-mcp@latest",
+        "description": "Spec-driven development workflow with dashboard"
+      }
+    }
+  },
+  
+  "postInstall": {
+    "message": "TDD Spec Workflow v2 installed!\n\nTask Execution Modes:\n  /tdd:execute-task <id>        - Autonomous (requires Ralph)\n  /tdd:execute-task-manual <id> - Interactive (no Ralph needed)\n\nFor autonomous mode, install Ralph:\n  /plugin install ralph-wiggum@claude-plugins-official\n\nInitialize your project:\n  /tdd:init              (auto-detect)\n  /tdd:init --mode full  (new repo)\n  /tdd:init --mode steering (add steering docs)\n  /tdd:init --mode entries  (add TDD entries only)"
+  }
+}
